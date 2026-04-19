@@ -3,3 +3,27 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
+.title {
+  font-size: 116px;
+  color: var(--title-font-color);
+  text-shadow: var(--title-font-shadow);
+}
+.subtitle{
+  background-color: #FF0070;
+  color: var(--subtitle-font-color);
+}
+
+.header__theme-menu {
+  grid-row: 1;
+}
+
+.header .title { 
+  max-height: max-content;
+  grid-row: 2;
+}
+
+.header .subtitle {
+  max-height: max-content;
+  grid-row: 3;
+}

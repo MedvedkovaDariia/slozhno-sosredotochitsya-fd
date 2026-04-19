@@ -40,3 +40,20 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+.page{
+  background-image: var(--main-background-image);
+  background-color: var(--main-background-color);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  min-content min-content min-content;
+  gap: 55px;
+}
+
