@@ -57,6 +57,7 @@ a {
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 1fr min-content 1fr;
+  margin-bottom: 40px;
 }
 
 
