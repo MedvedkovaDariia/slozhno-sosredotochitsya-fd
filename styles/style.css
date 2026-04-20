@@ -2,28 +2,112 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--main-font-family);
+
 }
 
-.title {
-  font-size: 116px;
-  color: var(--title-font-color);
-  text-shadow: var(--title-font-shadow);
-}
-.subtitle{
-  background-color: #FF0070;
-  color: var(--subtitle-font-color);
+.header {
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0 10px;
 }
 
 .header__theme-menu {
   grid-row: 1;
+  justify-self: end;
+  align-self: end;
+  margin-bottom: 10px;
 }
 
-.header .title { 
-  max-height: max-content;
-  grid-row: 2;
+.header__theme-menu-list {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  gap: 11px;
 }
 
-.header .subtitle {
-  max-height: max-content;
+.header__theme-menu-button {
+  background-color: transparent;
+  color:#FF0070;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--main-font-family);
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button_active {
+  /* border: 1px solid rgba(255, 0, 112, 0.4); */
+}
+
+.header__theme-menu-item:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.header__theme-menu-item:hover {
+  border-bottom: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+
+.title {
+   grid-row:2;
+   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+   font-family: var(--main-font-family);
+   font-weight: 700;
+   color: var(--title-font-color);
+   text-shadow: 4px 4px 0 var(--accent-color);
+   line-height: 83%;
+} 
+
+.subtitle {
+  background-color: var(--subtitle-background-color);
+  color: var(--subtitle-font-color);
+  line-height: 23.4px;
+  font-weight: 700;
+  padding-left: 1px;
+
+}
+
+.header__subtitle { 
   grid-row: 3;
+  justify-self: center;
+  align-self: start;
+  font-size: 1.12em;
+}
+
+
+
+.info {
+  color: var(--main-color-text);
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1;
+  gap: 20px;
+  font-size: 1.12em;
+  line-height: 23.4px;
+}
+
+.info_title {
+  color: var(--accent-color);
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 1.12em;
+}
+
+
+.info_text {
+ margin: 10px 13.97px 20px 10px;
+ font-weight: 400px;
+}
+
+
+.footer{
+  height: 100vh;
+  min-height: 668px;
+  align-content: center;
+  justify-self: center;
 }

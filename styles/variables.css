@@ -7,8 +7,12 @@
   --main-background-image: url(../images/cover-image-dark.png);
   --main-background-color: #000028;
   --title-font-color: #DB00FF;
-  --title-font-shadow: 4px 4px 0 #FF0070;
   --subtitle-font-color: #000028;
+  --main-font-family: 'IBM Plex mono', monospace;
+  --subtitle-background-color: #FF0070;
+  --accent-color:#FF0070;
+  --main-color-text: #F1B2CE;
+  /* --main-font-size: */
 
 }
 
