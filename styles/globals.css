@@ -47,13 +47,16 @@ a {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding: 0 10px;
+  font-family: var(--main-font-family);
 }
 
 .header {
   height: 100vh;
+  min-height: 668px;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows:  min-content min-content min-content;
-  gap: 55px;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr min-content 1fr;
 }
+
 

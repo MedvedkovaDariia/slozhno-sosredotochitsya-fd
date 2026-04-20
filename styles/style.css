@@ -2,24 +2,12 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-family: var(--main-font-family);
-
-}
-
-.header {
-  height: 100vh;
-  min-height: 668px;
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin: 0 10px;
 }
 
 .header__theme-menu {
   grid-row: 1;
   justify-self: end;
-  align-self: end;
-  margin-bottom: 10px;
+  align-self: center;
 }
 
 .header__theme-menu-list {
@@ -31,11 +19,10 @@
 
 .header__theme-menu-button {
   background-color: transparent;
-  color:#FF0070;
+  color:var(--accent-color);
   border: none;
   font-size: 18px;
   font-weight: 400;
-  font-family: var(--main-font-family);
   text-transform: lowercase;
   padding: 1.5px 13px;
 }
@@ -52,36 +39,31 @@
   border-bottom: 1px solid rgba(255, 0, 112, 0.4);
 }
 
-
-.title {
+ 
+.header_title {
    grid-row:2;
    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-   font-family: var(--main-font-family);
    font-weight: 700;
    color: var(--title-font-color);
    text-shadow: 4px 4px 0 var(--accent-color);
-   line-height: 83%;
+   line-height: 83%; 
+   letter-spacing: 7px;;
 } 
 
-.subtitle {
-  background-color: var(--subtitle-background-color);
-  color: var(--subtitle-font-color);
-  line-height: 23.4px;
-  font-weight: 700;
-  padding-left: 1px;
-
-}
 
 .header__subtitle { 
   grid-row: 3;
   justify-self: center;
-  align-self: start;
+  align-self: center;
   font-size: 1.12em;
+  line-height: 23.4px;
+  color: var(--subtitle-font-color);
+  background-color: var(--subtitle-background-color);
+  text-align: left;
 }
 
 
-
-.info {
+/* .info {
   color: var(--main-color-text);
   display: grid;
   grid-template-rows: auto;
@@ -110,4 +92,4 @@
   min-height: 668px;
   align-content: center;
   justify-self: center;
-}
+} */
