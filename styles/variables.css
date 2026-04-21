@@ -9,8 +9,10 @@
   --title-font-color: #DB00FF; 
   --subtitle-font-color: #000028;
   --main-color-text: #F1B2CE;
+  --main-size-text: 18px;
   --accent-color:#FF0070;
   --main-font-family: 'IBM Plex mono', monospace;
   --subtitle-background-color: #FF0070;
+  
 }
 

@@ -51,13 +51,6 @@ a {
   font-family: var(--main-font-family);
 }
 
-.header {
-  height: 100vh;
-  min-height: 668px;
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1fr min-content 1fr;
-  margin-bottom: 40px;
-}
+
 
 

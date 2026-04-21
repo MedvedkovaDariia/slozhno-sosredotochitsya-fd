@@ -4,6 +4,38 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
+.page::before{
+  content:"";
+  
+}
+
+.header {
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr min-content 1fr;
+  margin-bottom: 40px;
+}
+
+.rec {
+  position: absolute;
+  color: var(--accent-color);
+  top:10px;
+  right:38px;
+}
+
+.rec::before {
+  content:"";
+  width: 9px;
+  height:9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  position:absolute;
+  right:19px;
+  top: 10px;
+}
+
 .header__theme-menu {
   grid-row: 1;
   justify-self: end;
@@ -15,7 +47,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
 }
 
 .header__theme-menu-button {
@@ -36,14 +67,17 @@
   border: 1px solid rgba(255, 0, 112, 0.4);
 }
  
-.header_title {
-   grid-row:2;
+.title {
    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
    font-weight: 700;
    color: var(--title-font-color);
    text-shadow: 4px 4px 0 var(--accent-color);
    line-height: 83%;
 } 
+
+.title_header{
+    grid-row:2;
+}
 
 
 .header__subtitle { 
@@ -58,12 +92,15 @@
   margin-bottom: 7px;
 }
 
-.content_reason {
+.content {
   font-size: 18px;
   display: grid;
   grid-template-rows: 2;
+  font-size: var(--main-size-text);
+  margin-bottom: 50px;
   gap: 20px;
 }
+
 .content__title{
   grid-row:1;
   color: var(--accent-color);
@@ -71,50 +108,45 @@
   font-weight:700;
 }
 
-.content__reason-list{
+.content__list{
   grid-row:2;
   display: flex;
   flex-direction: column;
+  gap:20px;
+  color:var(--main-color-text);
 }
 
-.content__reason-item{
+.content__card {
+ display: flex;
+ flex-direction: column;
+ gap:10px;
+}
+
+.content__card-title{
  color:var(--subtitle-font-color);
  background-color: var(--subtitle-background-color);
  font-weight:700;
+ font-size: var(--main-size-text);
 }
 
 .content__reason-item-text {
-  color: var(--main-color-text);
   font-weight: 400;
 }
 
-/*.info {
-  color: var(--main-color-text);
+.gallery {
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: 1;
-  gap: 20px;
-  line-height: 23.4px;
+  grid-auto-rows: auto;
+  gap: 10px;
 }
 
-.info_title {
-  color: var(--accent-color);
-  margin: 0 10px;
-  font-weight: 700;
-  font-size: 1.12em;
+.gallery_img{
+ width: 100%;
 }
-
-
-.info_text {
- margin: 10px 13.97px 20px 10px;
- font-weight: 400px;
- font-size: 18px;
-}
-
 
 .footer{
   height: 100vh;
-  min-height: 668px;
+  justify-content: center;
   align-content: center;
-  justify-self: center;
-} */
+}
+
