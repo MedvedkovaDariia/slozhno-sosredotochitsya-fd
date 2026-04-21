@@ -12,17 +12,17 @@
   --main-background-image: url(../images/cover-image-light.png);
   --main-background-color: #FFF1F7;
   --main-color-text: #353430;
-  --accent-color:#FF8DCB;
   --title-font-color:#FFC2E6;
+  --accent-color:#FF8DCB;
 }
 
 @media(prefers-color-scheme: light){
   :root{
     --main-background-image: url(../images/cover-image-light.png);
     --main-background-color: #FFF1F7;
+    --title-font-color:#FFC2E6;
     --main-color-text: #353430;
     --accent-color:#FF8DCB;
-    --title-font-color:#FFC2E6;
   }
 
   .header__theme-menu-button {
