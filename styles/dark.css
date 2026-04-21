@@ -11,7 +11,13 @@
   --subtitle-font-color: #000028;
   --main-color-text: #F1B2CE;
   --accent-color:#FF0070;
+
+  .rec {
+    display: block;
+  }
 }
+
+  
 
 @media(prefers-color-scheme: dark){
   :root{
@@ -21,5 +27,9 @@
     --subtitle-font-color: #000028;
     --main-color-text: #F1B2CE;
     --accent-color:#FF0070;
+  }
+
+  .rec {
+    display: block;
   }
 }

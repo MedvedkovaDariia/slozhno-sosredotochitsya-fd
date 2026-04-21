@@ -49,16 +49,15 @@
   right: 30px;
 }
 
-.rec::after {
+.rec::before {
   content:"";
-  width: 9px;
-  height:9px;
-  background-color: var(--accent-color);
-  /* background: radial-gradient(circle at center, var(--accent-color),var(----main-background-color)); */
+  width: 15px;
+  height:15px;
+  background: radial-gradient(circle at center, var(--accent-color),var(--main-background-color));
   border-radius: 50%;
   position:absolute;
-  top:6px;
-  left: 40px;
+  top:5px;
+  left: 37px;
 } 
 
 .header__theme-menu {
