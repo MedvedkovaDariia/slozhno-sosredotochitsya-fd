@@ -3,17 +3,17 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
  overflow-x: hidden;
+ font-weight: 400;
 }
 
 .header {
   height: 100vh;
-  width: 100wh; 
   min-height: 668px;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows:  1fr min-content 1fr;
-  margin-bottom: 40px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .decorated-zone:before{
@@ -62,16 +62,15 @@
 } 
 
 .header__theme-menu {
-  grid-row: 1;
   justify-self: end;
   align-self: center;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap:12px;
 }
 
 .header__theme-menu-button {
@@ -81,7 +80,7 @@
   font-size: 18px;
   font-weight: 400;
   text-transform: lowercase;
-  padding: 1.5px 13px;
+  padding: 1px 13px;
 }
 
 .header__theme-menu-button_active {
@@ -102,7 +101,6 @@
 } 
 
 .header__subtitle { 
-  grid-row: 3;
   justify-self: center;
   align-self: center;
   font-size: 1.12em;
@@ -113,25 +111,39 @@
   margin-bottom: 7px;
 }
 
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
 .content {
   display: grid;
-  grid-template-columns:minmax(236px,45%) repeat(auto-fit,1fr);
   font-size: var(--main-size-text);
-  margin-bottom: 50px;
+  grid-template-columns: minmax(236px,45%) repeat(auto-fit, 1fr);
+  grid-template-rows: auto;
   gap: 20px;
+  line-height: 23.4px;
 }
+
+/* .distraction-factors {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+} */
 
 .content__title{
   color: var(--accent-color);
   font-size: var(--main-size-text);
   font-weight: 700;
+  line-height: 23.4px;
 }
 
 .content__list{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  color: var(--main-color-text);
   gap: 20px;
-  color:var(--main-color-text);
 }
 
 .content__card {
@@ -140,15 +152,11 @@
  gap: 10px;
 }
 
-.content__card-title{
+.title-decor {
  color:var(--subtitle-font-color);
  background-color: var(--accent-color);
  font-weight:700;
  font-size: var(--main-size-text);
-}
-
-.content__item-text {
-  font-weight: 400;
 }
 
 .link {
@@ -166,7 +174,7 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: auto;
   grid-auto-rows: auto;
   gap: 10px;
 }
@@ -177,13 +185,19 @@
 
 .footer{
   height: 100vh;
-  justify-content: center;
+  display: grid;
   align-content: center;
+  justify-content: center;
   position: relative;
 }
 
 
-@media(width>=700px){
+/* @media(width>=700px){
+
+  .title{
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  }
+
   .header__subtitle {
     width:50%;
     justify-self: end;
@@ -197,8 +211,8 @@
   .content__list{
     grid-column: 2;
   }
-
-  .change_direction_item{
+  
+  .distraction-factors_item {
     flex-direction: row;
   }
 
@@ -239,4 +253,6 @@
       grid-column: 2/4;
       grid-row:  3;
     }
-} 
+
+    
+}  */
