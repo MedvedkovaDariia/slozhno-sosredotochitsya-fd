@@ -1,20 +1,18 @@
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
- font-weight: 400;
- max-width: 1024px;
- display: flex;
- flex-direction: column;
- align-items: center;
+  font-weight: 400;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header{
+.header {
   height: 100vh;
-  min-height:668px;
+  min-height: 668px;
   padding: 10px 10px;
   box-sizing: border-box;
   display: grid;
-  grid-template-rows:  1fr min-content 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   position: relative;
   margin-bottom: 40px;
 }
@@ -27,7 +25,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap:12px;
+  gap: 12px;
 }
 
 .header__theme-menu-button {
@@ -51,34 +49,34 @@
 
 .header__theme-menu-button:focus-visible {
   outline: 1px solid transparent;
-  background:transparent;
+  background: transparent;
   border-bottom: 1px solid var(--accent-color);
 }
 
-.rec{
+.rec {
   position: absolute;
   font-size: var(--main-size-text);
   color: var(--accent-color);
-  right:37px;
+  right: 37px;
   top: 10px;
 }
- 
+
 .rec:after {
   position: absolute;
   content:" ";
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  left:100%;
+  left: 100%;
   margin-left: 5px;
   margin-top: 4px;
-  background: radial-gradient(circle at center, var(--accent-color),var(--main-background-color));
+  background: radial-gradient(circle at center, var(--accent-color), var(--main-background-color));
 }
 
 .decorated-zone:before {
   position: absolute;
-  right:3%;
-  top:1.5%;
+  right: 3%;
+  top: 1.5%;
   content:" ";
   width: 25px;
   height:25px;
@@ -93,7 +91,7 @@
   bottom:1.5%;
   content:" ";
   width: 25px;
-  height:25px;
+  height: 25px;
   background-color: transparent;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
@@ -105,12 +103,12 @@
   color: var(--title-font-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 83%;
-} 
+}
 
-.header__subtitle { 
+.header__subtitle {
   justify-self: end;
   align-self: center;
-  width:100%;
+  width: 100%;
   max-width: 491px;
   font-size: 1.12em;
   line-height: 23.4px;
@@ -135,35 +133,35 @@
   line-height: 23.4px;
 }
 
-.content__title{
+.content__title {
   color: var(--accent-color);
   font-size: var(--main-size-text);
   font-weight: 700;
   line-height: 23.4px;
 }
 
-.content__list{
+.content__list {
   display: grid;
   color: var(--main-color-text);
   gap: 20px;
 }
 
 .content__card {
- display: flex;
- flex-direction: column;
- gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .title-decor {
- color:var(--subtitle-font-color);
- background-color: var(--accent-color);
- font-weight:700;
- font-size: var(--main-size-text);
+  color:var(--subtitle-font-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: var(--main-size-text);
 }
 
 .link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color); 
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .link:hover {
@@ -181,101 +179,97 @@
   gap: 10px;
 }
 
-.gallery_img{
- width: 100%;
+.gallery_img {
+  width: 100%;
 }
 
-.footer{
+.footer {
   height: 100vh;
   display: grid;
+  width: 100%;
   align-content: center;
   justify-content: center;
   position: relative;
   padding: 10px;
 }
 
-@media(width>700px){ 
+@media(width>700px){
   .header {
     min-height: 768px;
-    height:100vh;
     width: 100%;
     padding: 20px;
   }
 
-  .title{
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
-    margin-left:-20px;
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-left: -20px;
   }
 
   .header__subtitle {
     width: 50%;
     max-width: 364px;
-  } 
+  }
 
-  .rec { 
+  .rec {
     right: 48px;
     top: 20px;
+ }
+
+  .decorated-zone:before {
+    right: 2.5%;
+    top: 2%;
   }
 
-.decorated-zone:before {
-  right:2.5%;
-  top:2%;
-}
-
-.decorated-zone:after {
-  left:2.5%;
-  bottom:2%;
-}
-
-
- .main{
-    margin-bottom: 70px;
+  .decorated-zone:after {
+    left: 2.5%;
+    bottom: 2%;
   }
 
- .content{
-   grid-template-columns: 35% 1fr;
-   column-gap: 0px;
-   padding: 20px 10px;
- }
+  .main {
+    margin-bottom:40px;
+  }
 
- .content__title{
-  font-weight: 700;
-  padding-right: 20px;
- }
+  .content {
+    grid-template-columns: 35% 1fr;
+    column-gap: 0px;
+    padding: 20px 10px;
+  }
 
- .content__list{
-  gap: 20px;
- }
+  .content__title {
+    font-weight: 700;
+    padding-right: 20px;
+  }
 
- .distraction-factors {
-  grid-template-columns: 1fr;
-  padding: 10px 10px;
- }
+  .content__list {
+    gap: 20px;
+  }
 
- .distraction-factors  .content__title{
-   width:35%;
- }
+  .distraction-factors {
+    grid-template-columns: 1fr;
+    padding: 10px 10px;
+  }
 
- .content__gallery{
-   grid-template-columns: 1fr;
-   padding: 7px 10px;
-   height: 823px;
- }
- 
- .content__gallery .content__list{
-  padding: 10px 0;
- }
+  .distraction-factors  .content__title {  
+    width: 35%;
+  }
 
-.gallery{
+  .content__gallery {
+    grid-template-columns: 1fr;
+    padding: 10px 10px;
+  }
+
+ .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, min-content);
-    gap:20px;
+    grid-template-rows: repeat(3, min-content);
+    gap: 20px;
+    padding: 10px 0;
+    min-height: auto;
   }
 
-  .gallery_img{
-    width:100%;
-    height:100%; 
+  .gallery_img {
+    width: 100%;
+    height: 100%; 
     object-fit: cover;
   }
 
@@ -286,7 +280,7 @@
 
   .gallery_img:nth-of-type(2) {
     grid-column: 3/4;
-    grid-row:  1/3;
+    grid-row: 1/3;
   }
 
   .gallery_img:nth-of-type(3) {
@@ -296,100 +290,114 @@
 
   .gallery_img:nth-of-type(4) {
     grid-column: 2;
-    grid-row:  2;
+    grid-row: 2;
   }
 
   .gallery_img:nth-of-type(5) {
     grid-column: 2/4;
-    grid-row:  3;
-  } 
-
-  .footer{
-    min-height: 1024px;
-    height:100vh;
+    grid-row: 3;
   }
 
-  .footer .title{
+  .footer {
+    min-height: 768px;
+    height: 100vh;
+  }
+
+  .footer .title {
     margin: auto;
  }
 }
 
- @media (width>=1024px){
-  .header{
+@media (width>=1024px) {
+  .header {
     padding: 13px 20px;
     min-height: 768px;
     height: 100vh;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+  }
+
+  .rec {
+    right: 48px;
+    top: 20px;
+  }
+
+  .decorated-zone:before {
+    right: 2%;
+    top: 2.7%;
+  }
+
+  .decorated-zone:after {
+    left: 2%;
+    bottom: 2.7%;
   }
 
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    padding: 5px;
   }
 
   .header__theme-menu-list {
     flex-direction: row;
   }
 
- .title {
+  .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-left:-20px;
-    padding-bottom: 10px;
+    margin-left: -20px;
+    padding-bottom: 0px;
   }
 
   .header__subtitle {
     width: 50%;
     max-width: 491px;
-    margin-bottom: 23px;
-  } 
+    margin-bottom: 8px;
+  }
 
-  .main{
+  .main {
     margin-bottom: 25px;
   }
 
- .content{
-   grid-template-columns: 34% 1fr;
-   padding: 20px 10px;
+  .content {
+    grid-template-columns: 34% 1fr;
+    padding: 20px 10px;
  }
 
-  .content__title{
-  font-weight: 700;
+  .content__title {
+    font-weight: 700;
  }
 
- .content__list{
-  gap: 20px;
- }
+  .content__list{
+    gap: 20px;
+  }
 
-.distraction-factors {
-  grid-template-columns: 1fr;
-  padding: 10px 10px;
- }
+  .distraction-factors {
+    grid-template-columns: 1fr;
+    padding: 10px 10px;
+  }
 
- .distraction-factors_item{
-  grid-template-columns: repeat(3, 1fr);
- }
-
-.content__gallery{
-   grid-template-columns: 1fr;
-   padding: 0px 10px;
-   height:100%;
-   /* max-height: 984px; */
- }
-
- .gallery{
-    display: grid;
+  .distraction-factors_item {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, min-content);
-    padding: 10px 0;
   }
 
-  .footer{
+  .content__gallery {
+    grid-template-columns: 1fr;
+    padding: 8px 10px;
+    height: 100%;
+  }
+
+  .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, min-content);
+      padding: 10px 0;
+    }
+
+  .footer {
     min-height: 768px;
-    height:100vh;
+    height: 100vh;
   }
 
-  .footer .title{
+  .footer .title {
     margin: auto;
  }
-
 }

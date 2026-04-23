@@ -42,13 +42,12 @@ a {
   line-height: inherit;
 }
 
-.page{
+.page {
   background-image: var(--main-background-image);
   background-color: var(--main-background-color);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  /* padding: 10px 10px; */
   font-family: var(--main-font-family);
 }
 
