@@ -193,7 +193,7 @@
   padding: 10px;
 }
 
-@media(width>700px){
+@media(width>700px) {
   .header {
     min-height: 768px;
     width: 100%;
@@ -249,7 +249,7 @@
     padding: 10px 10px;
   }
 
-  .distraction-factors  .content__title {  
+  .distraction-factors  .content__title {
     width: 35%;
   }
 
@@ -269,7 +269,7 @@
 
   .gallery_img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
   }
 
@@ -366,7 +366,7 @@
     font-weight: 700;
  }
 
-  .content__list{
+  .content__list {
     gap: 20px;
   }
 
