@@ -19,6 +19,16 @@
    display: none;
   } 
 
+  .decorated-zone:before{
+  border-top: 1px solid var(--main-color-text);
+  border-right: 1px solid var(--main-color-text);
+ }
+
+ .decorated-zone:after{
+  border-bottom: 1px solid var(--main-color-text);
+  border-left: 1px solid var(--main-color-text);
+ }
+
 }
 
  
@@ -48,4 +58,14 @@
  .rec{ 
    display: none;
  } 
+
+ .decorated-zone:before{
+  border-top: 1px solid var(--main-color-text);
+  border-right: 1px solid var(--main-color-text);
+ }
+
+ .decorated-zone:after{
+  border-bottom: 1px solid var(--main-color-text);
+  border-left: 1px solid var(--main-color-text);
+ }
 }
