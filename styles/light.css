@@ -1,59 +1,36 @@
 :root.theme-light {
   --main-background-image: url(../images/cover-image-light.png);
-  --main-background-color: #FFF1F7;
+  --main-background-color: #fff1f7;
+  --menu-color: #353430;
+  --main-title-font-color: #ffc2e6;
   --main-color-text: #353430;
-  --title-font-color: #FFC2E6;
-  --accent-color: #FF8DCB;
+  --title-section-color:#353430;
+  --title-card-color:#353430;
+  --accent-color: #ff8dcb;
+  --border-botton-color-hover: #32312d66;
+  --border-botton-color-focus: #353430;
+  
 }
 
- :root.theme-light .rec {
-    display: none;
-  }
+:root.theme-light .rec {
+  display: none;
+}
 
-  :root.theme-light .decorated-zone:before {
-    border-top: 1px solid var(--main-color-text);
-    border-right: 1px solid var(--main-color-text);
-  }
-
-  :root.theme-light .decorated-zone:after {
-    border-bottom: 1px solid var(--main-color-text);
-    border-left: 1px solid var(--main-color-text);
-  }
-
-@media(prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
   :root {
-    --main-background-image: url(../images/cover-image-light.png);
-    --main-background-color: #FFF1F7;
-    --title-font-color:#FFC2E6;
-    --main-color-text: #353430;
-    --accent-color:#FF8DCB;
+  --main-background-image: url(../images/cover-image-light.png);
+  --main-background-color: #fff1f7;
+  --menu-color: #353430;
+  --main-title-font-color: #ffc2e6;
+  --main-color-text: #353430;
+  --title-section-color:#353430;
+  --title-card-color:#353430;
+  --accent-color: #ff8dcb;
+  --border-botton-color-hover: #32312d66;
+  --border-botton-color-focus: #353430;
   }
 
-  .header__theme-menu-button {
-    color: var(--main-color-text);
-    border-color: var(--main-color-text);
-  }
-
-  .header__theme-menu-button_active {
-    outline: 1px solid var(--main-color-text);
-    pointer-events: none;
-  }
-
-  .header__theme-menu-item:hover {
-    border: 1px solid rgba(50, 49, 45, 0.4);
-  }
-
- .rec {
-   display: none;
-  } 
-
- .decorated-zone:before {
-    border-top: 1px solid var(--main-color-text);
-    border-right: 1px solid var(--main-color-text);
-  }
-
- .decorated-zone:after {
-    border-bottom: 1px solid var(--main-color-text);
-    border-left: 1px solid var(--main-color-text);
+  .rec {
+    display: none;
   }
 }

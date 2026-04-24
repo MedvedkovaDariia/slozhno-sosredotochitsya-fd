@@ -1,27 +1,17 @@
 :root.theme-dark {
   --main-background-image: url(../images/cover-image-dark.png);
   --main-background-color: #000028;
-  --title-font-color: #DB00FF;
-  --subtitle-font-color: #000028;
-  --main-color-text: #F1B2CE;
-  --accent-color: #FF0070;
+  --menu-color: #ff0070;
+  --main-title-font-color: #db00ff;
+  --main-color-text: #f1b2ce;
+  --title-section-color:#FF0070;
+  --title-card-color:#000028;
+  --accent-color: #ff0070;
+  --border-botton-color-hover: #ff007066;
+  --border-botton-color-focus: #ff0070;
 }
 
-  :root.theme-dark .rec {
-    display: block;
-  }
-
-@media(prefers-color-scheme: dark) {
-  :root {
-    --main-background-image: url(../images/cover-image-dark.png);
-    --main-background-color: #000028;
-    --title-font-color: #DB00FF;
-    --subtitle-font-color: #000028;
-    --main-color-text: #F1B2CE;
-    --accent-color:#FF0070;
-  }
-
-  .rec {
-    display: block;
-  }
+:root.theme-dark .rec {
+  display: block;
 }
+
